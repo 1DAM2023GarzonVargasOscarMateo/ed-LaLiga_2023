@@ -2,16 +2,46 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        // Persona: Presidente
+        Presidente presidente = new Presidente();
+        presidente.setNombre("Florentino");
+        presidente.setApellido("Perez");
 
-            // Press Mayús+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        Presidente presidente2 = new Presidente();
+        presidente2.setNombre("Joan");
+        presidente2.setApellido("Laporta");
+
+        // Persona: Entrenador
+        Entrenador entrenador = new Entrenador();
+        entrenador.setNombre("Carlo");
+        entrenador.setApellido("Ancelotti");
+
+        Entrenador entrenador2 = new Entrenador();
+        entrenador2.setNombre("Xavi");
+        entrenador2.setApellido("Hernandez");
+
+        // Persona: Jugador
+        Jugador jugador = new Jugador();
+        jugador.setNombre("Jude");
+        jugador.setApellido("Bellingham");
+
+        Jugador jugador2 = new Jugador();
+        jugador2.setNombre("Robert");
+        jugador2.setApellido("Lewandowski");
+
+        imprimir(presidente);
+        imprimir(entrenador);
+        imprimir(jugador);
+        imprimir(presidente2);
+        imprimir(entrenador2);
+        imprimir(jugador2);
+    }
+
+public static void imprimir(Persona persona) {
+    System.out.println("Nombre:" + persona.getNombre());
+
+    System.out.println("Apellido:" + persona.getApellido());
+
     }
 }
